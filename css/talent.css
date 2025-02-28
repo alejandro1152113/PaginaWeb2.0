@@ -1,0 +1,71 @@
+/* Estilo de las tarjetas de talento */
+.card {
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(238, 255, 0, 0.6);
+    /* Sombra suave con transparencia */
+}
+
+/* Contenedor de la imagen */
+.image-container {
+    width: 150px;
+    /* Tamaño fijo para mayor consistencia */
+    height: 150px;
+    margin: 0 auto;
+    /* Centrado horizontal */
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 10px rgba(1, 26, 255, 0.6);
+    /* Sombra con transparencia */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Corrección de la propiedad */
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+    /* Efecto de zoom al pasar el cursor */
+}
+
+/* Contenido de la tarjeta */
+.content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.content p {
+    font-size: 1rem;
+    color: #ccc;
+    margin: 5px 0;
+}
+
+/* Animación de entrada */
+.animated-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

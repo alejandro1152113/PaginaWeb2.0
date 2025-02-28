@@ -1,0 +1,48 @@
+/* Estilos solo para la página de valores */
+#valores-page .products-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+#valores-page .card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    width: 280px;
+    text-align: center;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#valores-page .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(238, 255, 0, 0.6);
+}
+
+#valores-page .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+#valores-page .card p {
+    font-size: 1rem;
+    color: #fff;
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    #valores-page .products-services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #valores-page .card {
+        width: 90%;
+    }
+}
